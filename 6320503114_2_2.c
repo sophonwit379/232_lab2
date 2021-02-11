@@ -8,11 +8,17 @@ int main()
     scanf("%f",&n);
     if(pro = 'A')
     {
-        r=abs(200-n);
+        r=n-200;
+        if(r<0)
+            printf("199.00");
+        else
     }
     else if(pro = 'B')
     {
-        r=abs(400-n);
+        r=n-400;
+        if(r<0)
+            printf("299.00");
+        else
     }
 
 
