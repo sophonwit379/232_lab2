@@ -32,7 +32,7 @@ int main()
             }
         if(ch>=74&&ch<=82)
             {
-                printf("{v}");
+                printf("{*v*}");
             }
         if (ch>=83&&ch<=90)
             {
