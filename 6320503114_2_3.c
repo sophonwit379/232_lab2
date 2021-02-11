@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,c,i,max,min;
+    int a,b,c,i,max,min,avg;
     char ch[3];
     scanf("%d %d %d",&a,&b,&c);
     int num[3]={a,b,c};
@@ -17,14 +17,22 @@ int main()
         min=b;
     else
         min=c;
+    if(a!=min && a!=max)
+        avg=a;
+    else if(b!=min && b!=max)
+        avg=b;
+    else
+        avg=c;
     scanf("%s",ch);
     for(i=0;i<3;i++)
     {
-
+        if(ch[i]=='A')
+            printf("%d ",min);
+        else if(ch[i]=='B')
+            printf("%d ",avg);
+        else
+            printf("%d ",max);
     }
-
-
-
 
 
 }
