@@ -4,7 +4,6 @@ int main()
     int a,b,c,i,max,min,avg;
     char ch[3];
     scanf("%d %d %d",&a,&b,&c);
-    int num[3]={a,b,c};
     if(a>b && a>c)
         max=a;
     else if(b>a && a>c)
@@ -33,6 +32,5 @@ int main()
         else
             printf("%d ",max);
     }
-
 
 }
